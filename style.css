@@ -8,7 +8,14 @@ html {
 }
 
 p {
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+.info {
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
 .formular {
@@ -18,33 +25,58 @@ p {
   margin-bottom: 30px;
 }
 
-/* Odsazení sekcí pro navigaci */
 section {
   scroll-margin-top: 80px;
 }
 
-/* Hlavní sekce pokrývá celou výšku obrazovky */
 .home-section {
   height: 100vh;
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("images/obr01.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
+  margin-top: 75px;
+  padding-top: 56px;
 }
 
-/* Logo - vycentrování a posunutí doleva */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .logo {
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
-  display: block;
-  margin-left: -100px; 
+  background-color: rgba(255, 228, 228, 0.4);
+  padding: 10px;
+  border-radius: 10px;
 }
 
-/* Navigační panel */
 .navbar {
   background-color: rgba(63, 112, 77, 0.8);
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.logo2 {
+  transition: transform 0.3s;
+}
+
+.logo2:hover {
+  transform: scale(1.2);
 }
 
 /* Navigační odkazy */
@@ -95,12 +127,6 @@ footer {
   color: #0ce5b2;
 }
 
-/* Copyright ve footeru */
-.footers .copy {
-  margin-top: 10px;
-  font-size: 0.9rem;
-}
-
 .nameofcompany {
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
@@ -126,11 +152,6 @@ footer {
   }
 
   .logo {
-    max-width: 100%;
-
-    position: absolute;
-    top: 20%;
-    left: 62%;
-    transform: translateX(-50%);
+    max-width: 90%;
   }
 }
