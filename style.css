@@ -25,7 +25,7 @@ section {
 
 /* Navigační panel */
 .navbar {
-  background-color: #3f704d;
+  background-color: rgb(63, 112, 77, 0.8);
 }
 
 /* Logo v navigaci */
@@ -98,7 +98,7 @@ footer {
   font-style: normal;
   font-size: 100px;
 
-  color: rgb(0, 255, 128);
+  color: rgb(255, 255, 255);
   background-color: rgb(128, 128, 128, 0.2);
   border-radius: 10px;
 }
