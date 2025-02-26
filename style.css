@@ -39,7 +39,7 @@ section {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: -100px; /* Posunutí loga doleva */
+  margin-left: -100px; 
 }
 
 /* Navigační panel */
