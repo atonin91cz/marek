@@ -7,6 +7,17 @@ html {
   height: 100%;
 }
 
+p {
+  color: black;
+}
+
+.formular {
+  background-color: rgba(63, 112, 77, 0.5);
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}
+
 /* Odsazení sekcí pro navigaci */
 section {
   scroll-margin-top: 80px;
@@ -15,27 +26,25 @@ section {
 /* Hlavní sekce pokrývá celou výšku obrazovky */
 .home-section {
   height: 100vh;
-  color: white;
-  background-color: #111;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+/* Logo - vycentrování a posunutí doleva */
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: -100px; /* Posunutí loga doleva */
+}
+
 /* Navigační panel */
 .navbar {
-  background-color: rgb(63, 112, 77, 0.8);
-}
-
-/* Logo v navigaci */
-.navbar-brand img {
-  max-height: 70px;
-  transition: transform 0.3s;
-}
-
-.navbar-brand img:hover {
-  transform: scale(1.1);
+  background-color: rgba(63, 112, 77, 0.8);
 }
 
 /* Navigační odkazy */
@@ -91,19 +100,37 @@ footer {
   margin-top: 10px;
   font-size: 0.9rem;
 }
-.fw-bold {
+
+.nameofcompany {
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 100px;
-
+  font-weight: 500;
+  font-style: italic;
+  font-size: 30px;
   color: rgb(255, 255, 255);
-  background-color: rgb(128, 128, 128, 0.2);
-  border-radius: 10px;
 }
 
 .rekonstrukce {
   font-size: 3rem;
   color: red;
+}
+
+/* Responzivita pro menší obrazovky */
+@media (max-width: 768px) {
+  .rekonstrukce {
+    font-size: 2rem;
+  }
+
+  .nameofcompany {
+    font-size: 24px;
+  }
+
+  .logo {
+    max-width: 100%;
+
+    position: absolute;
+    top: 20%;
+    left: 62%;
+    transform: translateX(-50%);
+  }
 }
